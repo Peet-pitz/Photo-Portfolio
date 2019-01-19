@@ -1,49 +1,189 @@
 <html>
     <head>
-        <link href="./css/style.css" rel="stylesheet" type="text/css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link href="https://fonts.googleapis.com/css?family=Aref+Ruqaa" rel="stylesheet">
-            
+        
+        <link href="./css/style.css" rel="stylesheet" type="text/css">
+        <style>
+
+
+#myImg {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#myImg:hover {opacity: 0.7;}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (image) */
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+}
+
+/* Caption of Modal Image */
+#caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+/* Add Animation */
+.modal-content, #caption {  
+  -webkit-animation-name: zoom;
+  -webkit-animation-duration: 0.6s;
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+  from {-webkit-transform:scale(0)} 
+  to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+  from {transform:scale(0)} 
+  to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+  .modal-content {
+    width: 100%;
+  }
+}
+</style>
+
     </head>
     <body>
         <div class="jumbotron">        
                 <div class="centered"> <b><h1>Peter Njoroge </h1> </b></div>
                 <div class="centered2"> <b><h1>Photographer </h1> </b></div>
+                
+                
         </div>
 
         <div class="container">
             
+                
+
                 <div class="row"> 
                         <div class="column">
-                          <img src="./css/IMG_1225.jpg" style="width:100%">
-                          <img src="./css/IMG_1245.jpg" style="width:100%">
-                          <img src="./css/IMG_1318.jpg" style="width:100%">
-                          <img src="./css/IMG_6057.jpg" style="width:100%">
-
+                          <img id="myImg" src="./css/IMG_1225.jpg"style="width:100%;cursor:pointer" 
+                          onclick="onClick(this)" class="w3-hover-opacity">                          
+                          <img id="myImg" src="./css/IMG_1318.jpg" style="width:100%;cursor:pointer" 
+                          onclick="onClick(this)" class="w3-hover-opacity">
+                          <img id="myImg" src="./css/IMG_6057.jpg"style="width:100%;cursor:pointer" 
+                          onclick="onClick(this)" class="w3-hover-opacity">
+                          <img id="myImg" src="./css/IMG_0903.jpg"style="width:100%;cursor:pointer" 
+                          onclick="onClick(this)" class="w3-hover-opacity">
+                        
                         </div>
                         <div class="column">
-                          <img src="./css/IMG_1898.jpg" style="width:100%">
-                          <img src="./css/IMG_6399.jpg" style="width:100%">
-                          <img src="./css/IMG_6455-2.jpg" style="width:100%">
-                          <img src="./css/IMG_6141.jpg" style="width:100%">
+                          <img id="myImg" src="./css/IMG_1898.jpg"style="width:100%;cursor:pointer" 
+                          onclick="onClick(this)" class="w3-hover-opacity">
+                          <img id="myImg" src="./css/IMG_6399.jpg" style="width:100%;cursor:pointer" 
+                          onclick="onClick(this)" class="w3-hover-opacity">
+                          <img id="myImg" src="./css/IMG_6455-2.jpg" style="width:100%;cursor:pointer" 
+                          onclick="onClick(this)" class="w3-hover-opacity">
+                          <img id="myImg" src="./css/IMG_6141.jpg" style="width:100%;cursor:pointer" 
+                          onclick="onClick(this)" class="w3-hover-opacity">
                           
                         </div> 
                         <div class="column">
-                          <img src="./css/IMG_1328.jpg" style="width:100%">
-                          <img src="./css/IMG_1329.jpg" style="width:100%">
-                          <img src="./css/IMG_1352.jpg" style="width:100%">
-                          <img src="./css/IMG_1891.jpg" style="width:100%">
+                          <img id="myImg" src="./css/IMG_1328.jpg" style="width:100%;cursor:pointer" 
+                          onclick="onClick(this)" class="w3-hover-opacity">
+                          <img id="myImg" src="./css/IMG_1329.jpg" style="width:100%;cursor:pointer" 
+                          onclick="onClick(this)" class="w3-hover-opacity">
+                          <img id="myImg" src="./css/IMG_1352.jpg" style="width:100%;cursor:pointer" 
+                          onclick="onClick(this)" class="w3-hover-opacity">
+                          <img id="myImg" src="./css/IMG_1891.jpg" style="width:100%;cursor:pointer" 
+                          onclick="onClick(this)" class="w3-hover-opacity">
                           
                         </div>
                         <div class="column">
-                          <img src="./css/IMG_6998.jpg" style="width:100%">
-                          <img src="./css/IMG_7012.jpg" style="width:100%">
-                          <img src="./css/IM_3027.jpg" style="width:100%">
-                          
+                          <img id="myImg" src="./css/IMG_6998.jpg" style="width:100%;cursor:pointer" 
+                          onclick="onClick(this)" class="w3-hover-opacity">
+                          <img id="myImg" src="./css/IMG_7012.jpg" style="width:100%;cursor:pointer" 
+                          onclick="onClick(this)" class="w3-hover-opacity">
+                          <img id="myImg" src="./css/IM_3027.jpg" style="width:100%;cursor:pointer" 
+                          onclick="onClick(this)" class="w3-hover-opacity">
                         </div>
                 </div>
-
+                <div id="modal01" class="w3-modal" onclick="this.style.display='none'">
+                        <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
+                        <div class="w3-modal-content w3-animate-zoom">
+                          <img id="img01" style="width:100%">
+                        </div>
+                </div>                
+                      <script>
+                        function onClick(element) {
+                          document.getElementById("img01").src = element.src;
+                          document.getElementById("modal01").style.display = "block";
+                        }
+                        </script>
+<br><br>
+                <div class="row">
+                    <h1 class="centered3">Contacts</h1>
+                </div>
+                <br><br>
+                <div class="row cont">
+                    <h2>Phone : 0726571038</h2>
+                    <div class="col-md-6"> <h6 class="text-right">                         
+                            <a href="https://www.instagram.com/p3larstudios/"><i class="fa fa-instagram" style="font-size:50px"></i></h6></a>
+                            
+                    </div>
+                </div>
+                <div class="row cont">
+                    <h2>Email : njoroge.pitz@gmail.com</h2>
+                </div>
+                
+                    
+                    
+                
         </div>
 
            
@@ -57,7 +197,6 @@
 
 
        
-
 
 
 

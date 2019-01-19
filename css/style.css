@@ -13,7 +13,6 @@
     background-size: cover;
     background-repeat:no-repeat;
     height: 80%;
-    
      }
 
 .centered{
@@ -22,7 +21,7 @@
     top: 20%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-size: 50px;
+    font-size: 100px;
     font-family: 'beyond_wonderlandregular';
 }
 
@@ -35,6 +34,15 @@
     font-size: 100px;
     font-family: 'beyond_wonderlandregular';
     }
+
+.centered3{
+    position:absolute;
+    color: white;
+    left: 20%;
+    transform: translate(-50%, -50%);
+    font-size: 50px;
+    font-family: 'beyond_wonderlandregular';
+}
 
 .row {
     display: flex;
@@ -69,3 +77,10 @@
       max-width: 100%;
     }
   }
+
+.cont{
+    color: white;
+}
+.ig{
+  size: 100%;
+}
